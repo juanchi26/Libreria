@@ -1,6 +1,8 @@
 const LIBROS_URL = "https://danielk2020.github.io/biblioteca/libros.json";
 const LIBRO_URL = "https://danikho2020.github.io/libros-biblioteca/" //+id.json
 
+let userEmail = localStorage.getItem("userEmail");
+
 function getJSONData(url){
     let result = {};
     return fetch(url)

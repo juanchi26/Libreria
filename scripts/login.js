@@ -3,6 +3,11 @@
 let email = document.getElementById("inputEmail");
 let password = document.getElementById("inputPassword");
 
+function setUserEmail() {
+    localStorage.setItem('email', email.value);
+  };
+
+  
 document.addEventListener("DOMContentLoaded", function () {
 
 document.getElementById("submitBtn").addEventListener("click", function () {
@@ -16,7 +21,8 @@ document.getElementById("submitBtn").addEventListener("click", function () {
     } 
 
     if (email.value != "" & password.value != "") {
-        window.location.href = "./portada.html"
+        window.location.href = "./portada.html";
+        setUserEmail();
     }
 
 })
