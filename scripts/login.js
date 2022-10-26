@@ -1,24 +1,23 @@
 // user:        eljose1960@mail.com
 // password:    pepe1960
+let email = document.getElementById("inputEmail");
+let password = document.getElementById("inputPassword");
 
+document.addEventListener("DOMContentLoaded", function () {
 
 document.getElementById("submitBtn").addEventListener("click", function () {
-    let email = document.getElementById("inputEmail").value;
-    let password = document.getElementById("inputPassword").value;
-    let seCumple = true;
 
-    if (email == "") {
-        seCumple = false;
-        alert("Falta el email");
+    if (email.value == "") {
+        email.classList.add("is-invalid");
+    } 
+
+    if (password.value == "") {
+        password.classList.add("is-invalid");
+    } 
+
+    if (email.value != "" & password.value != "") {
+        window.location.href = "./index.html"
     }
 
-    if (password == "") {
-        seCumple = false;
-        alert("Falta el password");
-    }
-
-    if (seCumple) {
-        window.location.href = "index.html";
-        
-    }
+})
 })
