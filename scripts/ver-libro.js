@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
         console.log(datos)
         contenidos()
         imagenes()
-        relacionados ()
+
         
         
     })
