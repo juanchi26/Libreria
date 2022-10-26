@@ -18,14 +18,25 @@ function mostrarLibros(arrayLibros) {
         (libro.paginas >= min && max == undefined) || (libro.paginas <= max && min == undefined)) */ {
 
             if (search == undefined || search == "" || libro.titulo.toLowerCase().indexOf(search.toLowerCase()) > -1) {
-                let contenido = `
+                let contenido =`
+                <div class="list-group">
+                <li onclick="redireccionar(${libro.id})" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1"> Título: ${libro.titulo}</h5>
+                  <small class="text-muted"> Páginas: ${libro.paginas}</small>
+                </div>
+                <p class="mb-1">Autor: ${libro.autor} <br></p>
+                <small class="text-muted">Editorial: ${libro.editorial}</small>
+              </li>
+              </div>`
+             /* `
                 <li onclick="redireccionar(${libro.id})">
                     Título: ${libro.titulo} <br>
                     Autor: ${libro.autor} <br>
                     Páginas: ${libro.paginas}
                 </li>
                 <hr>
-                `;
+                ` */;
                 document.getElementById("listado").innerHTML += contenido;
             }
         }
