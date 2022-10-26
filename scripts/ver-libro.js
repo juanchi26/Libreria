@@ -42,9 +42,33 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
 
-    
+class Libro2{
+constructor(titulo, autor, descripcion, editorial, isbn, paginas) {
+    this.titulo = titulo,
+    this.autor = autor,
+    this.descripcion = descripcion,
+    this.editorial = editorial,
+    this.isbn = isbn,
+    this.paginas = paginas
+}}
+ 
+    document.getElementById("BotonAgregar").addEventListener("click",function(){
+        LibroID()
+    });
 
 
+let arrayCajon = [];
+function LibroID(datos) {
+    if (localStorage.getItem("userEmail")){
+        let obj = new Libro2(datos.titulo, datos.autor, datos.descripcion, datos.editorial, datos.isbn, datos.paginas)
+   arrayCajon.push(obj);     
+   localStorage.setItem("Cajon", arrayCajon)     
+   window.location = "cajon.html";
+    }else{
+        window.location= "index.html"
+    }
+ 
+};
 
 
 })
