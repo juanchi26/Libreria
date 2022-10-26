@@ -14,33 +14,29 @@
 
     <div id="filtro-rango-pag">
 
-        <p>Ordenar por:</p> 
-
-        <button id="sortPagDesc">Pags Desc</button>
-
-        <hr>
-
-        <p>Filtrar por Paginas:</p>
-
-        <input type="number" placeholder="min." id="rango-min"> <br><br>
-
-        <input type="number" placeholder="máx." id="rango-max"> <br><br>
-
-        <button id="filtrar">Filtrar</button>
-        <button id="limpiar">Limpiar</button><br><br>
-
-        <hr>
-
-        <p>O busca el libro que quieres:</p> 
-
-        <input type="search" id="buscador"> <br><br>
-
-
-
-    </div>
-
+        <div class="card bg-dark" style="width: 18rem;">
+            <div class="card-body" id="filtro-rango-pag">
+            <p class="text-white">Ordenar por:</p> 
+            <button type="button" class="btn btn-outline-info" id="sortPagDesc">Pags Desc</button>
+            <hr>
+            <p class="text-white">Filtrar por Paginas:</p>
+            <input class="form-control" type="number" value="min" aria-label="readonly input" placeholder="min." id="rango-min">
+            
+          <br><br>
+          <input class="form-control" type="number" value="max" aria-label="readonly input" placeholder="máx." id="rango-max">
+          <br><br>
+            <button type="button" class="btn btn-outline-info" id="filtrar">Filtrar</button>
+            <button type="button" class="btn btn-outline-info" id="limpiar">Limpiar</button>
+            <br><br>
+            <hr>
+        <p class="text-white">O busca el libro que quieres:</p> 
+        <input class="form-control" type="search" value="" aria-label="readonly input" id="buscador">
     <br><br>
+    </div>
+</div>
+ </div>
 
+   
     <div id="listado"></div>
 
     <script src="scripts/init.js"></script>
