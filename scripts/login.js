@@ -16,7 +16,7 @@ document.getElementById("submitBtn").addEventListener("click", function () {
     } 
 
     if (email.value != "" & password.value != "") {
-        window.location.href = "./index.html"
+        window.location.href = "./portada.html"
     }
 
 })
