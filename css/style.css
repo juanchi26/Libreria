@@ -1,0 +1,54 @@
+.signin, #listado {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin: auto;
+    background-color: beige;
+    border: 1px black solid; 
+  }
+
+.invalid{
+  background-color: red;
+}
+
+#filtro-rango-pag {
+  float: left;
+  padding: 15px;
+  background-color: rgb(220, 226, 245);
+  border: 1px black solid; 
+  margin-top: 40px;
+}
+
+
+#info-user {
+  float: right;
+  padding: 15px;
+  background-color: rgb(229, 245, 220);
+  border: 1px black solid; 
+}
+
+ h3 {
+  text-align: center;
+}
+
+#imagenes {
+  margin-left: 15%;
+}
+.row #imagenesAdd {
+  text-align: center;
+  margin-right: 30px;
+  margin-left: 8%;
+  margin-top: 10px;
+  transition: all 300ms;
+  width: 250px;
+}
+
+.row #imagenesAdd:hover {
+  transform: scale(1.15);
+
+}
+
+#datos {
+  margin-left: 15%;
+  margin-right: 15%;
+}
